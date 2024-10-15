@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Journal - Banjara Luxury Travel</title>
+    <link rel="stylesheet" href="https://cdn.tailwindcss.com">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4">
+            <a href="index.html" class="text-3xl font-bold">Banjara</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="py-16">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-8">Submit Your Travel Experience</h2>
+                <form id="journal-form">
+                    <div class="form-group mb-4">
+                        <label for="name" class="block">Name</label>
+                        <input type="text" id="name" class="w-full p-2 border rounded-lg" required>
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="title" class="block">Title of Your Experience</label>
+                        <input type="text" id="title" class="w-full p-2 border rounded-lg" required>
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="story" class="block">Your Story</label>
+                        <textarea id="story" class="w-full p-2 border rounded-lg" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded-lg">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6">
+            <p>&copy; 2024 Banjara Luxury Travel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const journalForm = document.getElementById('journal-form');
+        journalForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert("Your travel story has been submitted! Thank you for sharing.");
+            // You would typically send this data to a server for processing
+        });
+    </script>
+</body>
+</html>
