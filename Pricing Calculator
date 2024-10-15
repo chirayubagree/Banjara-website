@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Calculator - Banjara Luxury Travel</title>
+    <link rel="stylesheet" href="https://cdn.tailwindcss.com">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4">
+            <a href="index.html" class="text-3xl font-bold">Banjara</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="py-16">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-8">Estimate Your Trip Cost</h2>
+                <form id="pricing-form">
+                    <div class="form-group mb-4">
+                        <label for="destination">Destination</label>
+                        <select id="destination" class="w-full p-2 border rounded-lg">
+                            <option value="maldives">Maldives</option>
+                            <option value="swiss-alps">Swiss Alps</option>
+                            <option value="tuscany">Tuscany</option>
+                        </select>
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="nights">Number of Nights</label>
+                        <input type="number" id="nights" class="w-full p-2 border rounded-lg" min="1" value="1">
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="people">Number of People</label>
+                        <input type="number" id="people" class="w-full p-2 border rounded-lg" min="1" value="2">
+                    </div>
+                    <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded-lg">Calculate</button>
+                </form>
+                <div id="price-estimate" class="hidden mt-4">
+                    <h3 class="font-bold">Estimated Price: $<span id="estimated-price"></span></h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6">
+            <p>&copy; 2024 Banjara Luxury Travel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('pricing-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const destination = document.getElementById('destination').value;
+            const nights = parseInt(document.getElementById('nights').value);
+            const people = parseInt(document.getElementById('people').value);
+
+            let pricePerNight = 0;
+            switch(destination) {
+                case 'maldives':
+                    pricePerNight = 1000;
+                    break;
+                case 'swiss-alps':
+                    pricePerNight = 1500;
+                    break;
+                case 'tuscany':
+                    pricePerNight = 800;
+                    break;
+            }
+
+            const totalPrice = pricePerNight * nights * people;
+            document.getElementById('estimated-price').textContent = totalPrice.toLocaleString();
+            document.getElementById('price-estimate').classList.remove('hidden');
+        });
+    </script>
+</body>
+</html>
