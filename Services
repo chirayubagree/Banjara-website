@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banjara Luxury Travel - Services</title>
+    <link rel="stylesheet" href="https://cdn.tailwindcss.com">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4">
+            <a href="index.html" class="text-3xl font-bold">Banjara</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="py-16">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-8">Our Services</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-4">Flight Ticket Bookings</h3>
+                        <p>We offer competitive rates on flights to destinations around the world. Let us find the best option for you.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-4">End-to-End Itineraries</h3>
+                        <p>Custom itineraries that include everything from flights to accommodation to activities, tailored just for you.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-4">Hotel Bookings</h3>
+                        <p>We work with luxury hotels to ensure you have the best accommodations during your stay.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-4">Visa Services</h3>
+                        <p>Assistance with visa applications to make your travel hassle-free.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-4">Travel Insurance</h3>
+                        <p>Protect your trip with our comprehensive travel insurance options.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-bold mb-4">Honeymoon & Celebration Packages</h3>
+                        <p>Specially designed packages for your romantic getaway or special celebration.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6">
+            <p>&copy; 2024 Banjara Luxury Travel. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
