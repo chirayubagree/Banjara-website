@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Banjara Luxury Travel</title>
+    <link rel="stylesheet" href="https://cdn.tailwindcss.com">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-6 py-4">
+            <a href="index.html" class="text-3xl font-bold">Banjara</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="py-16">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-8">About Us</h2>
+                <p class="text-center mb-4">At Banjara, we believe that travel is not just about reaching a destination; it’s about creating unforgettable experiences.</p>
+                <p class="text-center">We are committed to providing tailored travel solutions, ensuring every journey reflects your personal style and preferences. Our team of travel experts is dedicated to crafting bespoke itineraries that cater to your unique needs.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6">
+            <p>&copy; 2024 Banjara Luxury Travel. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
